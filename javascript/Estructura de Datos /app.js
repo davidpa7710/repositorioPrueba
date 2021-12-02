@@ -12,24 +12,34 @@ class Queue {
     }
     enqueue(elemento) {
         this.queue.push(elemento)
-        this.queue;
+        return this.queue;
     }
     dequeue() {
-        this.queue.shift()
+        return this.queue.shift()
     }
     peek() {
-        this.queue[0]
+        return this.queue[0]
     }
     size() {
-        this.queue.length()
+       return this.queue.length
     }
     print() {
         return this.queue
     }
     isEmpty() {
-        this.queue.length === 0
+        return this.queue.length === 0
     }
     back() {
-         return this.queue.length - 1
+        return this.queue.length - 1
     }
 }
+const queue = new Queue();
+console.log(queue.enqueue('Checo'))
+console.log(queue.enqueue('Max'))
+console.log(queue.enqueue('Alonso'))
+console.log(queue.enqueue('Hamilton'));
+console.log(queue.dequeue())
+console.log(queue.size())
+console.log(queue.peek())
+console.log(queue.isEmpty())
+console.log(queue.print());
