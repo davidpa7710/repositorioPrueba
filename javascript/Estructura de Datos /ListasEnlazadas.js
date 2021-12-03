@@ -56,3 +56,4 @@ linkendlist.insertar('c')
 linkendlist.delete()
 linkendlist.recorrido()
 linkendlist.busqueda('c')
+console.log('Valor Encontrado', busqueda());
