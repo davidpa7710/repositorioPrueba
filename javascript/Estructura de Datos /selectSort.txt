@@ -1,0 +1,21 @@
+INICIO
+    DECLARACION DE ARREGLO arr =[34,5,6,7,2,12,1]
+    INICIA Funcion selectSort(numeros)
+        DEFINIR let len = numeros.length
+        INICIA FOR (var i = 0 i < len i++)
+            DEFINIR let min = i 
+            INICIA FOR (let j = i + 1; j < n; j++)
+             ENTONCES
+                INICIA IF (numeros[j] < numeros[min])
+                 ENTONCES min = j;
+                 FIN IF 
+            FIN FOR
+                DEFINIR let resultado = numeros[min]
+                numeros[min] = numeros[i]
+                numeros[i] = resultado
+        FIN FOR
+       RETORNAR numeros 
+    FIN Funcion 
+
+ LLAMAR Funcion selectSort(arr)
+ IMPRIMIR(arr)                      
